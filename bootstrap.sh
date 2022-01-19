@@ -5,6 +5,28 @@ cd "$(dirname "${BASH_SOURCE}")";
 #git pull origin main;
 git pull origin work;
 
+# setup my vimrc separately
+git clone https://github.com/kluophysics/vimrc.git ~/.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+ln -s ~/.vim/vimrc ~/.vimrc
+vim +PluginInstall +qall
+
+
+function setup_ssh(){
+   # setup multiple ssh keys 
+   ssh-keygen -q -t rsa -C "kluo@Thinkpad-T470" -f ~/.ssh/id_rsa -N '' <<<y >/dev/null 2>&1
+   ssh-keygen -q -t rsa -C "kluo@njust.edu.cn" -f ~/.ssh/id_rsa_gitee -N '' <<<y >/dev/null 2>&1
+   ssh-keygen -q -t rsa -C "kluophysics@gmail.com" -f ~/.ssh/id_rsa_github -N '' <<<y >/dev/null 2>&1
+   ssh-keygen -q -t rsa -C "kluophysics@gmail.com" -f ~/.ssh/id_rsa_gitlab -N ''  <<<y >/dev/null 2>&1
+
+   ssh-add ~/.ssh/id_rsa
+   ssh-add ~/.ssh/id_rsa_github
+   ssh-add ~/.ssh/id_rsa_gitlab
+   ssh-add ~/.ssh/id_rsa_gitee
+}
+
+setup_ssh
+
 function doIt() {
 	rsync --exclude ".git/" \
 		--exclude ".DS_Store" \
