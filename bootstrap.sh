@@ -8,7 +8,7 @@ git pull origin work;
 # setup my vimrc separately
 git clone https://github.com/kluophysics/vimrc.git ~/.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-ln -s ~/.vim/vimrc ~/.vimrc
+ln -snf ~/.vim/vimrc ~/.vimrc
 vim +PluginInstall +qall
 
 
@@ -25,7 +25,7 @@ function setup_ssh(){
    ssh-add ~/.ssh/id_rsa_gitee
 }
 
-setup_ssh
+#setup_ssh
 
 function doIt() {
 	rsync --exclude ".git/" \
