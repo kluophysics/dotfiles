@@ -46,3 +46,6 @@ sudo apt -y install texlive-latex-base texlive-latex-recommended texlive-publish
 
 # gnuplot 
 sudo apt -y install gnuplot-qt
+
+# vncviewer
+sudo apt -y install tigervnc-viewer
