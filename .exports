@@ -35,3 +35,21 @@ export GPG_TTY=$(tty);
 
 # Hide the “default interactive shell is now zsh” warning on macOS.
 export BASH_SILENCE_DEPRECATION_WARNING=1;
+
+
+#export office='kluo@office2302b.qtp.ufl.edu'
+#export cori='kluo@cori.nersc.gov'
+#export hpg='kluo@hpg2.rc.ufl.edu'
+#export tomcat='kluo@129.187.132.155'
+
+# HPC at UF
+export UF='kluo@hpg2.rc.ufl.edu'
+#export TOMCAT='kluo@129.187.132.155'
+#export MEMEX='kluo@memex.carnegiescience.edu'
+#export PSC='kluophy@bridges.psc.edu'
+#export GLOFFICE='kluo@10.1.15.173'
+#export NERSC='kluo@cori.nersc.gov'
+export SUST="MCL@210.28.119.6"
+
+#export X2DHF_DIRECTORY=~/Documents/repo/x2dhf
+#export PATH=$X2DHF_DIRECTORY/bin/:$PATH

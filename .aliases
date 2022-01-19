@@ -146,3 +146,20 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+
+alias sust="ssh -p 12306 $SUST"
+
+alias sq='squeue -o "%.18i %.9P %.8j %.8u %.8T %.10M %.9l %.6D %R %Z"'
+
+#alias vnctomcat='ssh -N -f -l kluo -L 12345:localhost:5902 129.187.132.155 sleep 10; vncviewer localhost:12345'
+#alias vncmemex='ssh -N -f -l kluo -L 12346:localhost:5903 $MEMEX sleep 5; vncviewer localhost:12346'
+#alias vncgl='ssh -N -f -l kluo -L 12346:localhost:5902 10.1.15.173 sleep 5; vncviewer localhost:12346'
+
+#alias vncnersc='ssh -N -f -l kluo -L 12347:localhost:5904 $NERSC sleep 5; vncviewer localhost:12347'
+
+alias vnc107='ssh 107 -f -N -L 6999:localhost:5902; sleep 2; vncviewer localhost:6999'
+alias vnc108='ssh 108 -f -N -L 7999:localhost:5902; sleep 2; vncviewer localhost:7999'
+alias vnc110='ssh 110 -f -N -L 8999:localhost:5902; sleep 2; vncviewer localhost:8999'
+alias vncsust='ssh -p 12306 $SZ -f -N -L 7999:localhost:5901; sleep 5; vncviewer localhost:7999'
+
