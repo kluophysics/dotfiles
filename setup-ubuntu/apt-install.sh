@@ -36,7 +36,8 @@ sudo apt -y install vlc
 sudo wget -O - https://tagplus5.github.io/vscode-ppa/ubuntu/gpg.key | sudo apt-key add - && \
 sudo wget -O /etc/apt/sources.list.d/vscode.list https://tagplus5.github.io/vscode-ppa/ubuntu/vscode.list && \
 sudo apt update &&
-sudo apt -y install code code-insiders
+sudo apt -y install code #code-insiders
+# Visual Studio Code Insiders is just a beta version.
 
 # libreoffice suite
 sudo apt -y install libreoffice libreoffice-texmaths
