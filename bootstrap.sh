@@ -7,7 +7,9 @@ git pull origin work;
 
 # setup my vimrc separately
 git clone https://github.com/kluophysics/vimrc.git ~/.vim
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+if ! [ -f ~/.vim/bundle/Vundle.vim/autoload/vundle.vim ]; then
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
 ln -snf ~/.vim/vimrc ~/.vimrc
 vim +PluginInstall +qall
 
