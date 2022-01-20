@@ -161,5 +161,5 @@ alias sq='squeue -o "%.18i %.9P %.8j %.8u %.8T %.10M %.9l %.6D %R %Z"'
 alias vnc107='ssh 107 -f -N -L 6999:localhost:5902; sleep 2; vncviewer localhost:6999'
 alias vnc108='ssh 108 -f -N -L 7999:localhost:5902; sleep 2; vncviewer localhost:7999'
 alias vnc110='ssh 110 -f -N -L 8999:localhost:5902; sleep 2; vncviewer localhost:8999'
-alias vncsust='ssh -p 12306 $SZ -f -N -L 7999:localhost:5901; sleep 5; vncviewer localhost:7999'
+alias vncsust='ssh -p 12306 $SUST -f -N -L 7999:localhost:5901; sleep 5; vncviewer localhost:7999'
 
