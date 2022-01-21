@@ -9,6 +9,12 @@ sudo apt -y install git git-gui
 sudo apt -y install tree
 
 sudo apt -y install vim vim-gtk3
+sudo apt -y install fcitx fcitx-googlepinyin
+
+# set sogoupinyin for Ubuntu 20.04, not working yet
+#sudo cp /usr/share/applications/fcitx.desktop /etc/xdg/autostart/
+#sudo apt -y purge ibus
+
 sudo apt -y install cmake
 sudo apt -y install zsh
 sudo apt -y install autojump
@@ -36,8 +42,7 @@ sudo apt -y install vlc
 sudo wget -O - https://tagplus5.github.io/vscode-ppa/ubuntu/gpg.key | sudo apt-key add - && \
 sudo wget -O /etc/apt/sources.list.d/vscode.list https://tagplus5.github.io/vscode-ppa/ubuntu/vscode.list && \
 sudo apt update &&
-sudo apt -y install code #code-insiders
-# Visual Studio Code Insiders is just a beta version.
+sudo apt -y install code code-insiders
 
 # libreoffice suite
 sudo apt -y install libreoffice libreoffice-texmaths
