@@ -58,5 +58,6 @@ sudo apt -y install tigervnc-viewer
 sudo apt -y install gimp
 # inkscape
 sudo apt -y install inkscape
-# 
+# chromium-browser
+sudo apt -y install chromium-browser 
 
